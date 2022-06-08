@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  background-color: var(--light-gray);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+
+article {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center;
+  width: 20%;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+article img {
+  border-radius: 25px;
+  width: 100%;
+  height: auto;
+}
+
+article .text-content {
+  padding: 20px 30px;
+}
+
+article .text-content h1 {
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+}
+
+article .text-content p {
+  color: var(--grayish-blue);
+}
+
+footer {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--grayish-blue);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--dark-blue);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 1440px) {
+  article {
+    width: 27%;
+  }
+  article .text-content {
+    padding: 20px 33px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  article {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  article {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  article {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  article {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  article {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  article {
+    width: 90%;
+  }
+  article .text-content {
+    padding: 20px 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
